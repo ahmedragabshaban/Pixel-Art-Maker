@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Pixel Art Maker!</title>
+    <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    <form id="sizePicker">
+        <h1 class="font">Lab:Pixel Art Maker</h1>
+        <h4 class="font">Grid Size</h4> Height:
+        <input type="number" id="input_height" name="height" min="1" max="70" value="1"> Width:
+        <input type="number" id="input_width" name="width" min="1" max="70" value="1">
+        <h4 class="font">Color</h4>
+
+        <input type="color" class="cursor" id="colorPicker">
+
+        <input type="color" class="cursor" id="colorPicker1" value=#FFFFFF>
+
+        <input type="submit" class="cursor button" id="submit" value="Submit">
+
+        <input type="reset" class="cursor button" value="Reset" id="reset">
+
+    </form>
+
+    <h3 class="font">Design Canvas</h3>
+
+    <table id="pixel_canvas"></table>
+
+    <input type="submit" class="button center" id="nogrid" value="No Grid">
+
+    <script src="designs.js"></script>
+
+    <input type="submit" class="button center" id="save_image" value="Save">
+
+    <a download="PixelArtMaker.png" id="save">
+
+<input type="submit" class="button visibility center" id="download"  value="Download" >
+
+</a>
+
+<script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
